@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Hide the browser UI -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- MS tile icons -->
+    <meta name="msapplication-TileColor" content="#69f0ae">
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+    <!-- Android toolbar color -->
+    <meta name="theme-color" content="#69f0ae">
+    <!-- Apple touch icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+    <!-- Android touch icons -->
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <!-- Web app manifest file -->
+    <link rel="manifest" href="favicons/manifest.json">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/css/wata.min.css">
+    <!-- Site title -->
+    <title>Eric Kwong</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- The preloader we see before the whole site is loaded -->
+        <div id="preloader" class="valign-wrapper">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only actually-black">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- A status spinner to indicate that some process is going on -->
+        <div id="status">
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-blue-only actually-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation bar -->
+        <div class="navbar-fixed" id="nav">
+            <nav>
+                <div class="nav-wrapper">
+                    <!-- Site name -->
+                    <a href="#" class="brand-logo"><img style="width: 90px" src="images/ek_logo.png" alt=""></a>
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#aboutme">Who am I?</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Triangles section -->
+        <div id="triangles" class="scrollspy">
+            <div id="output">
+                <div class="h1-wrapper valign-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Your company's slogan, feel free to add more tags here -->
+                                <h1>Eric Kwong</h1>
+                                <h1 style="font-size: 3em">Full Stack Web Developer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Action button -->
+                    <a href="#aboutme" class="btn-floating btn-large waves-effect waves-dark green accent-2" id="explore">
+                        <i class="mdi-navigation-arrow-forward indigo-text text-darken-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Services section -->
+        <div class="section scrollspy" id="aboutme">
+            <div class="container">
+                <div class="row">
+                    <h2>About Me</h2>
+                    <div>
+                        <img class="my-portrait" align="left" src="images/me_crop.jpg" alt="">
+                        <p style="padding: 1em" class="flow-text">
+                            I'm a Web Developer based in New York. I am a graduate of General Assembly's Web Development Immersive course. I love building on the web and the way it allows me to stretch my reach in creativity and thinking. I love playing video games. I've played Counter-strike competitively a third of my life. Playing and being on my computer more than the the average person has driven my interest in technology. I always had a thing for new technologies but I didn't start off striving to become a web developer until I found General Assembly and got a taste of what I can build. I'm also a music lover, tech ethusiast, huge foodie and a sucker for good UX/UI design.
+                        </p>
+                    </div>
+                </div>
+                <!-- Row with service icons -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+    <!-- About section -->
+    <div class="section scrollspy" id="projects">
+        <div class="container">
+            <div class="row">
+                <h2>Projects</h2>
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p class="flow-text center-align">
+                        Check out some of the work I've done
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wide-container">
+            <div class="row team">
+                <div class="col s12 m6">
+                    <div class="description-ball"></div>
+                    <div class="description center-align">
+                        <div class="row h4-row">
+                            <h3>Featur</h3>
+                            <p style="padding: 20px">Featur is an web application that allows users to find a particular music artist and their collaborators. Users are able to see songs the artists collaborated in and save them to their personally created playlists. Featur uses Spotify's API and it allows users to playback songs from their playlists through Spotify Web plugin. Featur was built using Node.js and Backbone.js.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="http://featur.herokuapp.com">Check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/projects/featur.png" class="responsive-img">
+                </div>
+                <div class="col s12 m6">
+                    <div class="description-ball"></div>
+                    <div class="description center-align">
+                        <div class="row h4-row">
+                            <h3>CSGO Veto</h3>
+                            <p style="padding: 20px">
+                                CSGO Veto is an app built with React.js and was made for the Counter-Strike Global Offensive competitive gaming community so that users/event organizers can easily veto maps for tournament play.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="http://csgo-veto.herokuapp.com">Check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/projects/csgoveto.png" class="responsive-img">
+                </div>
+                <div class="col s12 m6">
+                    <div class="description-ball"></div>
+                    <div class="description center-align">
+                        <div class="row h4-row">
+                            <h3>Fresh Movies</h3>
+                            <p style="padding: 20px">
+                                Fresh Movies is a simple app built with React.js, Node.js and utilizes theMovieDB API to retrieve all the latest movies available. It allows users to easily browse through the latest movies and find a short summary and rating on the movies.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="http://fresh-movies.herokuapp.com">Check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/projects/freshmovies.png" class="responsive-img">
+                </div>
+                <div class="col s12 m6">
+                    <div class="description-ball"></div>
+                    <div class="description center-align">
+                        <div class="row h4-row">
+                            <h3>Skillmix</h3>
+                            <p style="padding: 20px">
+                                Skillmix is a matching service that matches users with users depending on skills they want to learn from each other. Skillmix was built using Node.js and Backbone.js. It also utilizes Amazon Web Services S3 for storing users profile images.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="images/projects/skillmix.png" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+    <!-- Contact form section -->
+    <div class="section scrollspy" id="contact">
+        <div class="container">
+            <div class="row">
+                <h2>Contact</h2>
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p class="flow-text center-align">
+                        Feel free to reach me through any of the information provided below
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        <div class="wide-container">
+            <div class="row">
+                <div class="col s12">
+                    <!-- Google map container -->
+                    <div style="display: none" id="map-canvas" class="map"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container contact-details">
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <h5>Resume</h5>
+                    <div class="divider"></div>
+                    <p>
+                        <a href="assets/erickwong_resume.pdf">Download</a>
+                    </p>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h5>Reach Me</h5>
+                    <div class="divider"></div>
+                    <p>
+                        (646) 881-7661
+                        <br>
+                        <a href="mailto:contact@erickwong.com">contact@erickwong.com</a>
+                    </p>
+                </div>
+                <div class="col s12 m6 l4 modern-connect">
+                    <h5>Social Media</h5>
+                    <div class="divider"></div>
+                    <p>
+                        <!-- Add your Skype link here -->
+                        <a href="http://www.linkedin.com/in/erickwong618"><i class="fa fa-linkedin"></i> erickwong618.linkedin</a>
+                        <br>
+                        <a href="http://www.github.com/EricKwong"><i class="fa fa-github"></i> EricKwong.github</a>
+                        <br>
+                        <a href="http://www.twitter.com/OfficialKwong"><i class="fa fa-twitter"></i> OfficialKwong.twitter</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                Powered by Eric Kwong
+                <!-- Social icons -->
+                <span class="social right">
+                        <a href="http://www.linkedin.com/in/erickwong618"><i class="fa fa-linkedin"></i></a>
+                        <a href="http://www.github.com/EricKwong"><i class="fa fa-github"></i></a>
+                        <a href="http://www.twitter.com/OfficialKwong"><i class="fa fa-twitter"></i></a>
+                    </span>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Ajax box container, waiting for its turn -->
+    <div id="ajax-box" class="translate"></div>
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/build.js"></script>
+</body>
+
+</html>
